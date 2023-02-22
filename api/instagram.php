@@ -7,6 +7,11 @@ class InstagramAPI {
         $this->accessToken = $accessToken;
     }
     
+    /**
+     * Get all posts of an instagram account
+     * @param $userID string id of the Instagram account
+     * @return Array result
+     */
     function getAllPosts($userId) {
         $url = $this->apiUrl . $userId . '/media?fields=caption,media_url,thumbnail_url,permalink&access_token=' . $this->accessToken;
         $ch = curl_init($url);

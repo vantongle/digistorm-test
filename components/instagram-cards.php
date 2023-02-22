@@ -1,7 +1,10 @@
-<?php 
+<?php
+    //Connect to Instagram API and generate data
     $instagram = new InstagramAPI($_ENV['INSTAGRAM_ACCESS_TOKEN']);
     $userId = $_ENV['INSTAGRAM_USER_ID'];
     $allPosts = $instagram->getAllPosts($userId)['data'];
+
+    //Character limits for post captions
     $captionCharacterLimit = 110;
 ?>
 
