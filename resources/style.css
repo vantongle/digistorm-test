@@ -1,0 +1,12 @@
+.owl-stage-outer {
+    padding: 10px 0;
+}
+
+.owl-nav {
+    text-align: center;
+    font-size: 25px;
+}
+
+.owl-nav button{
+    margin: 0 15px;
+}
